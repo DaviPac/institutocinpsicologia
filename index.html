@@ -4,7 +4,10 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Instituto CIN — Centro Integrado de Psicologia e Neuropsicologia</title>
-<meta name="description" content="Instituto CIN — Centro Integrado de Psicologia e Neuropsicologia. Ciência e afeto para cuidar de cada história.">
+<meta name="description" content="Instituto CIN, em Petrolina (PE), oferece psicoterapia e avaliação neuropsicológica para crianças, adolescentes, adultos e idosos, com escuta individualizada e olhar científico.">
+<meta property="og:title" content="Instituto CIN — Centro Integrado de Psicologia e Neuropsicologia">
+<meta property="og:description" content="Cuidado psicológico e neuropsicológico em Petrolina (PE), com escuta individualizada para cada fase da vida.">
+<meta property="og:type" content="website">
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Public+Sans:wght@300;400;500;600;700&display=swap');
 
@@ -1707,337 +1710,250 @@ code {
 	inherits: false;
 }
 
-/* ==== Supplemental site rules (mobile nav + header state), same design tokens as above ==== */
-.site-header {
-	position: sticky;
-	top: 0;
-}
-
-.mobile-nav {
-	position: absolute;
-	inset-inline: 0;
-	top: 100%;
-}
-
-.icon-circle {
-	display: inline-flex;
-	align-items: center;
-	justify-content: center;
-	font-size: 15px;
-	line-height: 1;
-}
 </style>
 </head>
 <body class="grain">
+<div class="relative min-h-screen overflow-x-clip bg-cream text-ink">
 
-<header class="site-header z-40 w-full transition-all duration-300" id="header">
-	<div class="mx-auto flex max-w-6xl items-center justify-between gap-6 px-6 py-5 md:px-10" >
-		<a href="#inicio" class="flex items-center gap-3">
-			<span class="flex h-9 w-9 items-center justify-center rounded-full border border-ink/15 font-display text-clay">C</span>
-			<span class="font-display text-lg text-ink">Instituto CIN</span>
-		</a>
-
-		<nav class="hidden items-center gap-8 md:flex">
-			<a href="#sobre" class="text-sm font-medium text-ink-soft transition-colors duration-300 hover:text-clay-dark">O Instituto</a>
-			<a href="#servicos" class="text-sm font-medium text-ink-soft transition-colors duration-300 hover:text-clay-dark">Serviços</a>
-			<a href="#diferenciais" class="text-sm font-medium text-ink-soft transition-colors duration-300 hover:text-clay-dark">Diferenciais</a>
-			<a href="#publico" class="text-sm font-medium text-ink-soft transition-colors duration-300 hover:text-clay-dark">Para quem é</a>
-			<a href="https://wa.me/message/3HAVRIM3BVEBC1" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center rounded-full bg-clay-dark px-7 py-2.5 text-sm font-medium text-cream shadow-[0_8px_24px_-8px_rgba(168,97,61,0.6)] transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_12px_28px_-8px_rgba(168,97,61,0.7)]">Agende seu atendimento</a>
+<header id="header" class="fixed inset-x-0 top-0 z-40 transition-all duration-500 bg-transparent">
+	<div class="mx-auto flex max-w-6xl items-center justify-between px-6 py-4 md:px-10">
+		<a href="#topo" class="font-display text-lg tracking-tight text-ink">Instituto <span class="italic text-clay-dark">CIN</span></a>
+		<nav class="hidden items-center gap-8 text-sm text-ink-soft md:flex">
+			<a href="#sobre" class="transition-colors hover:text-clay-dark">Sobre</a>
+			<a href="#servicos" class="transition-colors hover:text-clay-dark">Serviços</a>
+			<a href="#diferencial" class="transition-colors hover:text-clay-dark">Diferencial</a>
+			<a href="#contato" class="transition-colors hover:text-clay-dark">Contato</a>
 		</nav>
-
-		<button id="menuButton" aria-label="Abrir menu" class="inline-flex h-9 w-9 items-center justify-center rounded-full border border-ink/15 text-ink md:hidden">☰</button>
+		<a href="https://wa.me/message/3HAVRIM3BVEBC1" target="_blank" rel="noopener noreferrer" class="hidden items-center gap-2 rounded-full bg-ink px-5 py-2.5 text-sm font-medium text-cream transition-transform hover:scale-[1.03] md:inline-flex">
+			<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2.992 16.342a2 2 0 0 1 .094 1.167l-1.065 3.29a1 1 0 0 0 1.236 1.168l3.413-.998a2 2 0 0 1 1.099.092 10 10 0 1 0-4.777-4.719"></path></svg>
+			Agendar
+		</a>
 	</div>
-
-	<nav id="navLinks" class="mobile-nav hidden flex-col gap-4 border-t border-ink/10 bg-cream/90 p-8 shadow-[0_10px_30px_-8px_rgba(0,0,0,0.35)] backdrop-blur-md md:hidden">
-		<a href="#sobre" class="text-sm font-medium text-ink-soft">O Instituto</a>
-		<a href="#servicos" class="text-sm font-medium text-ink-soft">Serviços</a>
-		<a href="#diferenciais" class="text-sm font-medium text-ink-soft">Diferenciais</a>
-		<a href="#publico" class="text-sm font-medium text-ink-soft">Para quem é</a>
-		<a href="https://wa.me/message/3HAVRIM3BVEBC1" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center rounded-full bg-clay-dark px-7 py-2.5 text-sm font-medium text-cream">Agende seu atendimento</a>
-	</nav>
 </header>
 
-<main id="inicio">
+<section id="topo" class="relative flex min-h-[100svh] items-center pt-24">
+	<div aria-hidden="true" class="animate-drift pointer-events-none absolute -right-24 top-16 h-[26rem] w-[26rem] rounded-[45%_55%_60%_40%/50%_45%_55%_50%] bg-sage/25 blur-2xl md:h-[34rem] md:w-[34rem]"></div>
+	<div aria-hidden="true" class="animate-drift pointer-events-none absolute -left-32 bottom-0 h-[22rem] w-[22rem] rounded-[55%_45%_40%_60%/45%_55%_50%_50%] bg-clay/15 blur-2xl md:h-[30rem] md:w-[30rem]" style="animation-delay:3s"></div>
 
-	<section class="relative overflow-x-clip pt-24 pb-16 md:py-32 min-h-[100svh] flex items-center">
-		<div class="animate-drift pointer-events-none absolute -left-32 bottom-0 h-[22rem] w-[22rem] rounded-[55%_45%_40%_60%/45%_55%_50%_50%] bg-sage/25 blur-2xl" style="animation-delay:3s"></div>
-		<div class="animate-drift pointer-events-none absolute -right-24 top-16 h-72 w-72 rounded-[45%_55%_60%_40%/50%_45%_55%_50%] bg-clay/15 blur-3xl"></div>
-
-		<div class="relative z-10 mx-auto grid max-w-6xl grid-cols-1 items-center gap-10 px-6 md:grid-cols-[1.2fr_0.8fr] md:gap-16 md:px-10">
-			<div class="reveal is-visible">
-				<p class="text-sm font-medium uppercase tracking-[0.25em] text-clay">Petrolina · Pernambuco</p>
-				<h1 class="mt-6 font-display text-[2.75rem] leading-[1.08] tracking-tight text-ink sm:text-6xl md:text-7xl">
-					Ciência e afeto <span class="text-clay-dark italic">para cuidar</span> de cada história.
-				</h1>
-				<p class="mt-6 max-w-xl text-lg leading-relaxed text-taupe/80">
-					Um espaço para pensar a mente com cuidado — onde Psicologia e Neuropsicologia caminham juntas para acolher cada pessoa, em cada fase da vida.
-				</p>
-				<div class="mt-10 flex flex-col gap-4 sm:flex-row">
-					<a href="https://wa.me/message/3HAVRIM3BVEBC1" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center rounded-full bg-clay-dark px-7 py-2.5 text-sm font-medium text-cream shadow-[0_8px_24px_-8px_rgba(168,97,61,0.6)] transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_12px_28px_-8px_rgba(168,97,61,0.7)]">Agende seu atendimento</a>
-					<a href="#sobre" class="inline-flex items-center justify-center rounded-full border border-ink/15 px-7 py-2.5 text-sm font-medium text-ink transition-colors duration-300 hover:border-ink/30 hover:bg-ink/5">Conheça o Instituto</a>
-				</div>
-			</div>
-
-			<div class="relative hidden items-end justify-center md:flex animate-fade-up" style="animation-delay:200ms">
-				<div class="relative h-[26rem] w-[26rem] overflow-hidden rounded-[45%_55%_60%_40%/50%_45%_55%_50%] bg-sand/50 shadow-[0_10px_30px_-8px_rgba(0,0,0,0.35)] md:h-[34rem] md:w-[34rem]">
-					<span class="absolute top-1/2 left-1/2 -translate-y-1/2 font-display text-7xl text-ink-soft/10" style="transform:translate(-50%,-50%)">CIN</span>
-				</div>
-				<div class="absolute -left-16 bottom-8 max-w-sm rounded-2xl border border-ink/8 bg-cream/90 p-7 shadow-[0_10px_30px_-8px_rgba(0,0,0,0.35)] backdrop-blur-md">
-					<p class="text-sm font-medium text-ink">Um olhar integral</p>
-					<p class="mt-2 text-[15px] text-taupe">Psicologia + Neuropsicologia para compreender a pessoa em sua totalidade.</p>
-				</div>
+	<div class="relative z-10 mx-auto grid w-full max-w-6xl gap-10 px-6 py-16 md:grid-cols-[1.2fr_0.8fr] md:gap-6 md:px-10">
+		<div class="animate-fade-up">
+			<p class="mb-5 text-sm font-medium uppercase tracking-[0.25em] text-sage-dark">Petrolina · Pernambuco</p>
+			<h1 class="font-display text-[2.75rem] leading-[1.08] tracking-tight text-ink sm:text-6xl md:text-7xl">Instituto <span class="italic text-clay-dark">CIN</span></h1>
+			<p class="mt-3 max-w-xl font-display text-xl text-ink-soft sm:text-2xl">Centro Integrado de Psicologia e Neuropsicologia</p>
+			<p class="mt-6 max-w-lg text-lg leading-relaxed text-taupe">Um espaço para pensar a mente com cuidado — onde ciência e afeto caminham juntos para acolher cada história, em cada fase da vida.</p>
+			<div class="mt-10 flex flex-col gap-4 sm:flex-row">
+				<a href="https://wa.me/message/3HAVRIM3BVEBC1" target="_blank" rel="noopener noreferrer" class="group inline-flex items-center justify-center gap-2 rounded-full bg-clay-dark px-7 py-4 text-base font-medium text-cream shadow-[0_8px_24px_-8px_rgba(168,97,61,0.6)] transition-all hover:scale-[1.02] hover:shadow-[0_12px_28px_-8px_rgba(168,97,61,0.7)]">
+					Agende seu atendimento
+					<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg>
+				</a>
+				<a href="#sobre" class="inline-flex items-center justify-center gap-2 rounded-full border border-ink/15 px-7 py-4 text-base font-medium text-ink-soft transition-colors hover:border-ink/30 hover:bg-ink/5">Conheça o Instituto</a>
 			</div>
 		</div>
-	</section>
-
-	<section id="sobre" class="py-16 md:py-28">
-		<div class="mx-auto grid max-w-6xl grid-cols-1 items-center gap-10 px-6 md:grid-cols-[0.4fr_0.6fr] md:gap-16 md:px-10">
-			<div class="reveal is-visible max-h-[26rem]">
-				<div class="relative mx-auto h-[22rem] w-[22rem] overflow-hidden rounded-[55%_45%_40%_60%/45%_55%_50%_50%] bg-sage/25 shadow-[0_10px_30px_-8px_rgba(0,0,0,0.35)] md:h-[30rem] md:w-[30rem]"></div>
-			</div>
-			<div class="reveal is-visible">
-				<p class="text-sm font-medium uppercase tracking-[0.25em] text-clay">Sobre o Instituto</p>
-				<h2 class="mt-4 font-display text-3xl leading-tight tracking-tight text-ink sm:text-4xl">Um lugar de cuidado, pensado para você.</h2>
-				<p class="mt-6 text-base leading-relaxed text-taupe">O Instituto CIN nasceu para ser um espaço onde Psicologia e Neuropsicologia se encontram a serviço de um único propósito: compreender a pessoa em sua totalidade.</p>
-				<p class="mt-5 text-base leading-relaxed text-taupe">Cada atendimento é construído a partir da singularidade de quem chega — sua história, seu momento de vida, sua forma única de sentir e pensar.</p>
-				<p class="mt-5 text-base leading-relaxed text-taupe">Trabalhamos com um olhar individualizado para diferentes fases da vida, unindo rigor técnico-científico a uma escuta verdadeiramente humana.</p>
-				<p class="mt-9 max-w-xl font-display text-2xl italic leading-relaxed text-ink-soft">Cuidar da mente também é reconhecer a neurodiversidade e as múltiplas formas de existir no mundo.</p>
-			</div>
-		</div>
-	</section>
-
-	<section id="servicos" class="py-16 md:py-28">
-		<div class="mx-auto max-w-6xl px-6 md:px-10">
-			<div class="reveal is-visible max-w-xl">
-				<p class="text-sm font-medium uppercase tracking-[0.25em] text-clay">O que oferecemos</p>
-				<h2 class="mt-4 font-display text-3xl leading-tight tracking-tight text-ink sm:text-4xl">Nossos serviços</h2>
-				<p class="mt-5 text-base leading-relaxed text-taupe">Cuidado psicológico e neuropsicológico pensado de forma individualizada para diferentes momentos e necessidades.</p>
-			</div>
-
-			<div class="mt-14 grid grid-cols-1 gap-6 md:grid-cols-3">
-				<article class="reveal is-visible md:col-span-2 rounded-2xl border border-ink/8 bg-sand/40 p-8 shadow-[0_1px_0_0_rgba(43,38,33,0.06)] transition-all duration-300 hover:-translate-y-1 hover:border-clay/30 hover:shadow-[0_20px_40px_-24px_rgba(43,38,33,0.25)]">
-					<p class="text-sm font-medium uppercase tracking-[0.25em] text-clay/50">01</p>
-					<h3 class="mt-6 font-display text-2xl text-ink">Psicoterapia</h3>
-					<p class="mt-3 text-[15px] leading-relaxed text-taupe">Espaço de escuta contínua para elaborar questões emocionais, relacionais e existenciais.</p>
-				</article>
-
-				<article class="reveal is-visible md:col-span-1 rounded-2xl border border-ink/8 bg-cream p-8 shadow-[0_1px_0_0_rgba(43,38,33,0.06)] transition-all duration-300 hover:-translate-y-1 hover:border-clay/30 hover:shadow-[0_20px_40px_-24px_rgba(43,38,33,0.25)]">
-					<p class="text-sm font-medium uppercase tracking-[0.25em] text-clay/50">02</p>
-					<h3 class="mt-6 font-display text-2xl text-ink">Avaliação Neuropsicológica</h3>
-					<p class="mt-3 text-[15px] leading-relaxed text-taupe">Investigação aprofundada de funções cognitivas, como atenção, memória e linguagem.</p>
-				</article>
-
-				<article class="reveal is-visible md:col-span-1 rounded-2xl border border-ink/8 bg-cream p-8 shadow-[0_1px_0_0_rgba(43,38,33,0.06)] transition-all duration-300 hover:-translate-y-1 hover:border-clay/30 hover:shadow-[0_20px_40px_-24px_rgba(43,38,33,0.25)]">
-					<p class="text-sm font-medium uppercase tracking-[0.25em] text-clay/50">03</p>
-					<h3 class="mt-6 font-display text-2xl text-ink">Atendimento Infantil</h3>
-					<p class="mt-3 text-[15px] leading-relaxed text-taupe">Cuidado utilizando a linguagem do brincar, respeitando o tempo e a singularidade da infância.</p>
-				</article>
-
-				<article class="reveal is-visible md:col-span-1 rounded-2xl border border-ink/8 bg-cream p-8 shadow-[0_1px_0_0_rgba(43,38,33,0.06)] transition-all duration-300 hover:-translate-y-1 hover:border-clay/30 hover:shadow-[0_20px_40px_-24px_rgba(43,38,33,0.25)]">
-					<p class="text-sm font-medium uppercase tracking-[0.25em] text-clay/50">04</p>
-					<h3 class="mt-6 font-display text-2xl text-ink">Adolescentes</h3>
-					<p class="mt-3 text-[15px] leading-relaxed text-taupe">Um espaço de escuta para transformações, dúvidas e descobertas dessa fase.</p>
-				</article>
-
-				<article class="reveal is-visible md:col-span-2 rounded-2xl border border-ink/8 bg-sand/40 p-8 shadow-[0_1px_0_0_rgba(43,38,33,0.06)] transition-all duration-300 hover:-translate-y-1 hover:border-clay/30 hover:shadow-[0_20px_40px_-24px_rgba(43,38,33,0.25)]">
-					<p class="text-sm font-medium uppercase tracking-[0.25em] text-clay/50">05 · 06</p>
-					<h3 class="mt-6 font-display text-2xl text-ink">Adultos &amp; Neuropsicologia</h3>
-					<p class="mt-3 text-[15px] leading-relaxed text-taupe">Acompanhamento para ansiedade, mudanças de vida, relações e autoconhecimento — integrando ciência e clínica para compreender a relação entre cérebro, cognição e comportamento.</p>
-				</article>
-			</div>
-		</div>
-	</section>
-
-	<section id="diferenciais" class="py-16 md:py-28">
-		<div class="mx-auto max-w-6xl px-6 md:px-10">
-			<div class="reveal is-visible max-w-xl">
-				<p class="text-sm font-medium uppercase tracking-[0.25em] text-clay">Nosso diferencial</p>
-				<h2 class="mt-4 font-display text-3xl leading-tight tracking-tight text-ink sm:text-4xl">Ciência e afeto na mesma direção.</h2>
-				<p class="mt-5 text-base leading-relaxed text-taupe">Um cuidado que une conhecimento científico, escuta humana e respeito à singularidade.</p>
-			</div>
-
-			<div class="mt-14 grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-4">
-				<article class="reveal is-visible bg-ink p-7 rounded-2xl shadow-[0_10px_30px_-8px_rgba(0,0,0,0.35)]">
-					<p class="text-sm tracking-[0.25em] uppercase text-clay">01</p>
-					<h3 class="mt-6 font-display text-2xl text-cream">Acolhimento verdadeiro</h3>
-					<p class="mt-3 text-[15px] leading-relaxed text-cream/70">Cada pessoa é recebida como é, sem pressa e sem julgamento, desde o primeiro contato.</p>
-				</article>
-				<article class="reveal is-visible bg-ink p-7 rounded-2xl shadow-[0_10px_30px_-8px_rgba(0,0,0,0.35)]">
-					<p class="text-sm tracking-[0.25em] uppercase text-clay">02</p>
-					<h3 class="mt-6 font-display text-2xl text-cream">Escuta individualizada</h3>
-					<p class="mt-3 text-[15px] leading-relaxed text-cream/70">Nenhum caminho é padronizado. O cuidado é desenhado a partir da história de quem chega.</p>
-				</article>
-				<article class="reveal is-visible bg-ink p-7 rounded-2xl shadow-[0_10px_30px_-8px_rgba(0,0,0,0.35)]">
-					<p class="text-sm tracking-[0.25em] uppercase text-clay">03</p>
-					<h3 class="mt-6 font-display text-2xl text-cream">Olhar científico</h3>
-					<p class="mt-3 text-[15px] leading-relaxed text-cream/70">Prática fundamentada em evidências, atualização constante e rigor técnico.</p>
-				</article>
-				<article class="reveal is-visible bg-ink p-7 rounded-2xl shadow-[0_10px_30px_-8px_rgba(0,0,0,0.35)]">
-					<p class="text-sm tracking-[0.25em] uppercase text-clay">04</p>
-					<h3 class="mt-6 font-display text-2xl text-cream">Psicologia + Neuropsicologia</h3>
-					<p class="mt-3 text-[15px] leading-relaxed text-cream/70">Duas áreas que se complementam para enxergar a pessoa em sua totalidade.</p>
-				</article>
-			</div>
-		</div>
-	</section>
-
-	<section id="publico" class="py-16 md:py-28">
-		<div class="mx-auto max-w-6xl px-6 md:px-10">
-			<div class="reveal is-visible mx-auto max-w-2xl text-center">
-				<p class="text-sm font-medium uppercase tracking-[0.25em] text-clay">Para quem é</p>
-				<h2 class="mt-4 font-display text-3xl leading-tight tracking-tight text-ink sm:text-4xl">Cuidado para cada fase da vida.</h2>
-				<p class="mt-5 text-base leading-relaxed text-taupe">Atendemos diferentes momentos da vida, respeitando as necessidades e particularidades de cada pessoa.</p>
-			</div>
-
-			<div class="mt-14 grid grid-cols-2 gap-6 md:grid-cols-4">
-				<article class="reveal is-visible flex h-72 flex-col justify-between rounded-3xl bg-sand/40 p-8 transition-colors duration-300 hover:bg-sand/70">
-					<span></span>
-					<div>
-						<h3 class="font-display text-2xl text-ink">Crianças</h3>
-						<p class="mt-2 text-sm text-taupe">Desenvolvimento, aprendizagem e primeiras infâncias.</p>
-					</div>
-				</article>
-				<article class="reveal is-visible flex h-72 flex-col justify-between rounded-3xl bg-sand/40 p-8 transition-colors duration-300 hover:bg-sand/70">
-					<span></span>
-					<div>
-						<h3 class="font-display text-2xl text-ink">Adolescentes</h3>
-						<p class="mt-2 text-sm text-taupe">Identidade, autonomia e transformações.</p>
-					</div>
-				</article>
-				<article class="reveal is-visible flex h-72 flex-col justify-between rounded-3xl bg-sand/40 p-8 transition-colors duration-300 hover:bg-sand/70">
-					<span></span>
-					<div>
-						<h3 class="font-display text-2xl text-ink">Adultos</h3>
-						<p class="mt-2 text-sm text-taupe">Rotina, relações e autoconhecimento.</p>
-					</div>
-				</article>
-				<article class="reveal is-visible flex h-72 flex-col justify-between rounded-3xl bg-sand/40 p-8 transition-colors duration-300 hover:bg-sand/70">
-					<span></span>
-					<div>
-						<h3 class="font-display text-2xl text-ink">Idosos</h3>
-						<p class="mt-2 text-sm text-taupe">Memória, envelhecimento ativo e qualidade de vida.</p>
-					</div>
-				</article>
-			</div>
-		</div>
-	</section>
-
-	<section class="py-16 md:py-28">
-		<div class="mx-auto max-w-6xl px-6 md:px-10">
-			<div class="grid grid-cols-1 gap-10 md:grid-cols-[0.5fr_0.5fr] md:gap-16">
-				<div class="reveal is-visible flex flex-col gap-4">
-					<p class="text-sm font-medium uppercase tracking-[0.25em] text-clay">Fale conosco</p>
-					<h2 class="font-display text-3xl leading-tight tracking-tight text-ink sm:text-4xl">Vamos conversar?</h2>
-					<p class="text-base leading-relaxed text-taupe">Escolha o canal que preferir — estamos prontos para acolher sua história.</p>
-				</div>
-
-				<div class="flex flex-col gap-6">
-					<div class="reveal is-visible flex gap-6 border-t border-ink/10 pt-6">
-						<span class="icon-circle h-9 w-9 shrink-0 rounded-full border border-ink/15 text-clay">☎</span>
-						<div>
-							<p class="font-medium text-ink">WhatsApp</p>
-							<a href="https://wa.me/message/3HAVRIM3BVEBC1" target="_blank" rel="noopener noreferrer" class="text-sm text-taupe transition-colors duration-300 hover:text-clay-dark">Agende seu atendimento</a>
-						</div>
-					</div>
-					<div class="reveal is-visible flex gap-6 border-t border-ink/10 pt-6">
-						<span class="icon-circle h-9 w-9 shrink-0 rounded-full border border-ink/15 text-clay">◎</span>
-						<div>
-							<p class="font-medium text-ink">Instagram</p>
-							<a href="https://www.instagram.com/institutocin" target="_blank" rel="noopener noreferrer" class="text-sm text-taupe transition-colors duration-300 hover:text-clay-dark">@institutocin</a>
-						</div>
-					</div>
-					<div class="reveal is-visible flex gap-6 border-t border-ink/10 pt-6">
-						<span class="icon-circle h-9 w-9 shrink-0 rounded-full border border-ink/15 text-clay">⚑</span>
-						<div>
-							<p class="font-medium text-ink">Endereço</p>
-							<a href="https://www.google.com/maps/search/?api=1&query=Petrolina%2C%20Pernambuco" target="_blank" rel="noopener noreferrer" class="text-sm text-taupe transition-colors duration-300 hover:text-clay-dark">Petrolina, Pernambuco</a>
-						</div>
-					</div>
-					<div class="reveal is-visible flex gap-6 border-t border-ink/10 pt-6">
-						<span class="icon-circle h-9 w-9 shrink-0 rounded-full border border-ink/15 text-clay">☾</span>
-						<div>
-							<p class="font-medium text-ink">Atendimento</p>
-							<p class="text-sm text-taupe">Presencial e online, com hora marcada</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<section class="py-16 md:py-28">
-		<div class="relative mx-auto max-w-2xl px-6 text-center md:px-10 reveal is-visible">
-			<p class="text-sm font-medium uppercase tracking-[0.25em] text-clay">Instituto CIN</p>
-			<h2 class="mt-4 font-display text-3xl leading-tight tracking-tight text-ink sm:text-4xl">Vamos conversar sobre o cuidado que faz sentido para você?</h2>
-			<p class="mt-5 text-base leading-relaxed text-taupe">Entre em contato com o Instituto CIN e descubra como podemos acolher sua história.</p>
-			<a href="https://wa.me/message/3HAVRIM3BVEBC1" target="_blank" rel="noopener noreferrer" class="mt-8 inline-flex items-center justify-center rounded-full bg-clay-dark px-7 py-2.5 text-sm font-medium text-cream shadow-[0_8px_24px_-8px_rgba(168,97,61,0.6)] transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_12px_28px_-8px_rgba(168,97,61,0.7)]">Falar pelo WhatsApp</a>
-		</div>
-	</section>
-
-</main>
-
-<footer class="bg-ink py-16 text-cream/70">
-	<div class="mx-auto max-w-6xl px-6 md:px-10">
-		<div class="grid grid-cols-1 gap-10 md:grid-cols-3 md:gap-16">
-			<div>
-				<div class="flex items-center gap-3">
-					<span class="flex h-9 w-9 items-center justify-center rounded-full border border-ink/15 font-display text-clay">C</span>
-					<span class="font-display text-lg text-cream">Instituto CIN</span>
-				</div>
-				<p class="mt-5 max-w-sm text-sm leading-relaxed text-cream/60">Centro Integrado de Psicologia e Neuropsicologia. Ciência e afeto caminhando juntos para cuidar de cada história.</p>
-			</div>
-
-			<div class="flex flex-col gap-4">
-				<p class="text-sm font-medium text-cream">Navegação</p>
-				<a href="#sobre" class="text-sm text-cream/60 transition-colors duration-300 hover:text-cream">O Instituto</a>
-				<a href="#servicos" class="text-sm text-cream/60 transition-colors duration-300 hover:text-cream">Serviços</a>
-				<a href="#diferenciais" class="text-sm text-cream/60 transition-colors duration-300 hover:text-cream">Diferenciais</a>
-				<a href="#publico" class="text-sm text-cream/60 transition-colors duration-300 hover:text-cream">Para quem é</a>
-			</div>
-
-			<div class="flex flex-col gap-4">
-				<p class="text-sm font-medium text-cream">Contato</p>
-				<a href="https://wa.me/message/3HAVRIM3BVEBC1" target="_blank" rel="noopener noreferrer" class="text-sm text-cream/60 transition-colors duration-300 hover:text-cream">WhatsApp</a>
-				<a href="https://www.instagram.com/institutocin" target="_blank" rel="noopener noreferrer" class="text-sm text-cream/60 transition-colors duration-300 hover:text-cream">Instagram</a>
-				<a href="https://www.google.com/maps/search/?api=1&query=Petrolina%2C%20Pernambuco" target="_blank" rel="noopener noreferrer" class="text-sm text-cream/60 transition-colors duration-300 hover:text-cream">Petrolina, Pernambuco</a>
-			</div>
-		</div>
-
-		<div class="mt-16 flex flex-col gap-2 pt-6 sm:flex-row sm:items-center sm:justify-between">
-			<p class="text-sm text-cream/60">© <span id="year"></span> Instituto CIN</p>
-			<p class="text-sm text-cream/60">Centro Integrado de Psicologia e Neuropsicologia</p>
+		<div class="animate-fade-up hidden items-end justify-center md:flex" style="animation-delay:200ms">
+			<svg viewBox="0 0 240 300" class="h-full max-h-[26rem] w-auto" aria-hidden="true">
+				<path d="M120 8c48 0 92 40 100 96 6 44-10 78-42 104-30 24-32 60-58 80-30 22-72 8-88-26-14-30-4-58 6-88 12-36-4-70 8-102C58 34 84 8 120 8Z" fill="var(--color-sand)"></path>
+				<circle cx="120" cy="128" r="46" fill="none" stroke="var(--color-clay-dark)" stroke-width="1.4" opacity="0.55"></circle>
+				<circle cx="120" cy="128" r="30" fill="none" stroke="var(--color-sage-dark)" stroke-width="1.4" opacity="0.6"></circle>
+				<path d="M96 128c6-14 20-22 24-4 4-16 20-10 24 2" fill="none" stroke="var(--color-clay-dark)" stroke-width="2" stroke-linecap="round"></path>
+			</svg>
 		</div>
 	</div>
+</section>
+
+<section id="sobre" class="relative mx-auto max-w-6xl px-6 py-24 md:px-10 md:py-32">
+	<div class="grid gap-12 md:grid-cols-[0.4fr_0.6fr] md:gap-16">
+		<div class="reveal">
+			<p class="text-sm font-medium uppercase tracking-[0.25em] text-sage-dark">Sobre o Instituto</p>
+			<h2 class="mt-4 font-display text-3xl leading-tight text-ink sm:text-4xl">Um lugar de cuidado, <span class="italic text-clay-dark">pensado para você</span></h2>
+		</div>
+		<div class="reveal">
+			<p class="text-lg leading-relaxed text-taupe">O Instituto CIN nasceu para ser um espaço onde Psicologia e Neuropsicologia se encontram a serviço de um único propósito: compreender a pessoa em sua totalidade. Aqui, cada atendimento é construído a partir da singularidade de quem chega — sua história, seu momento de vida, sua forma única de sentir e pensar.</p>
+			<p class="mt-5 text-lg leading-relaxed text-taupe">Trabalhamos com um olhar individualizado para diferentes fases da vida, unindo rigor técnico-científico a uma escuta verdadeiramente humana. Acreditamos que cuidar da mente é também reconhecer a neurodiversidade e as múltiplas formas de existir no mundo.</p>
+		</div>
+	</div>
+</section>
+
+<section id="servicos" class="relative bg-sand/50 py-24 md:py-32">
+	<div class="mx-auto max-w-6xl px-6 md:px-10">
+		<div class="reveal max-w-xl">
+			<p class="text-sm font-medium uppercase tracking-[0.25em] text-sage-dark">O que oferecemos</p>
+			<h2 class="mt-4 font-display text-3xl leading-tight text-ink sm:text-4xl">Nossos serviços</h2>
+		</div>
+		<div class="mt-14 grid grid-cols-1 gap-5 md:grid-cols-3">
+			<div class="reveal md:col-span-2">
+				<article class="group h-full rounded-3xl border border-ink/8 bg-cream p-8 transition-all duration-300 hover:-translate-y-1 hover:border-clay/30 hover:shadow-[0_20px_40px_-24px_rgba(43,38,33,0.25)]">
+					<span class="mb-6 block h-9 w-9 rounded-full bg-sage/25 transition-colors group-hover:bg-clay/25"></span>
+					<h3 class="font-display text-xl text-ink">Psicoterapia</h3>
+					<p class="mt-3 text-[15px] leading-relaxed text-taupe">Espaço de escuta contínua para elaborar questões emocionais, relacionais e existenciais, no ritmo de cada pessoa.</p>
+				</article>
+			</div>
+			<div class="reveal md:col-span-2">
+				<article class="group h-full rounded-3xl border border-ink/8 bg-cream p-8 transition-all duration-300 hover:-translate-y-1 hover:border-clay/30 hover:shadow-[0_20px_40px_-24px_rgba(43,38,33,0.25)]">
+					<span class="mb-6 block h-9 w-9 rounded-full bg-sage/25 transition-colors group-hover:bg-clay/25"></span>
+					<h3 class="font-display text-xl text-ink">Avaliação Neuropsicológica</h3>
+					<p class="mt-3 text-[15px] leading-relaxed text-taupe">Investigação aprofundada de funções cognitivas — atenção, memória, linguagem — para compreender e orientar cada caso.</p>
+				</article>
+			</div>
+			<div class="reveal md:col-span-1">
+				<article class="group h-full rounded-3xl border border-ink/8 bg-cream p-8 transition-all duration-300 hover:-translate-y-1 hover:border-clay/30 hover:shadow-[0_20px_40px_-24px_rgba(43,38,33,0.25)]">
+					<span class="mb-6 block h-9 w-9 rounded-full bg-sage/25 transition-colors group-hover:bg-clay/25"></span>
+					<h3 class="font-display text-xl text-ink">Atendimento Infantil</h3>
+					<p class="mt-3 text-[15px] leading-relaxed text-taupe">Cuidado com a linguagem do brincar, respeitando o tempo e a singularidade do desenvolvimento na infância.</p>
+				</article>
+			</div>
+			<div class="reveal md:col-span-1">
+				<article class="group h-full rounded-3xl border border-ink/8 bg-cream p-8 transition-all duration-300 hover:-translate-y-1 hover:border-clay/30 hover:shadow-[0_20px_40px_-24px_rgba(43,38,33,0.25)]">
+					<span class="mb-6 block h-9 w-9 rounded-full bg-sage/25 transition-colors group-hover:bg-clay/25"></span>
+					<h3 class="font-display text-xl text-ink">Atendimento para Adolescentes</h3>
+					<p class="mt-3 text-[15px] leading-relaxed text-taupe">Um lugar de escuta para as transformações, dúvidas e descobertas típicas dessa fase da vida.</p>
+				</article>
+			</div>
+			<div class="reveal md:col-span-1">
+				<article class="group h-full rounded-3xl border border-ink/8 bg-cream p-8 transition-all duration-300 hover:-translate-y-1 hover:border-clay/30 hover:shadow-[0_20px_40px_-24px_rgba(43,38,33,0.25)]">
+					<span class="mb-6 block h-9 w-9 rounded-full bg-sage/25 transition-colors group-hover:bg-clay/25"></span>
+					<h3 class="font-display text-xl text-ink">Atendimento para Adultos</h3>
+					<p class="mt-3 text-[15px] leading-relaxed text-taupe">Acompanhamento para lidar com ansiedade, mudanças de vida, relações e autoconhecimento.</p>
+				</article>
+			</div>
+			<div class="reveal md:col-span-1">
+				<article class="group h-full rounded-3xl border border-ink/8 bg-cream p-8 transition-all duration-300 hover:-translate-y-1 hover:border-clay/30 hover:shadow-[0_20px_40px_-24px_rgba(43,38,33,0.25)]">
+					<span class="mb-6 block h-9 w-9 rounded-full bg-sage/25 transition-colors group-hover:bg-clay/25"></span>
+					<h3 class="font-display text-xl text-ink">Neuropsicologia</h3>
+					<p class="mt-3 text-[15px] leading-relaxed text-taupe">Integração entre ciência e clínica para compreender a relação entre cérebro, cognição e comportamento.</p>
+				</article>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section id="diferencial" class="relative mx-auto max-w-6xl px-6 py-24 md:px-10 md:py-32">
+	<div class="reveal max-w-xl">
+		<p class="text-sm font-medium uppercase tracking-[0.25em] text-sage-dark">Nosso diferencial</p>
+		<h2 class="mt-4 font-display text-3xl leading-tight text-ink sm:text-4xl">Ciência e afeto <span class="italic text-clay-dark">na mesma direção</span></h2>
+	</div>
+	<div class="mt-16 grid gap-x-10 gap-y-12 md:grid-cols-2">
+		<div class="reveal flex gap-6 border-t border-ink/10 pt-6">
+			<span class="font-display text-2xl text-clay/50">01</span>
+			<div>
+				<h3 class="font-display text-xl text-ink">Acolhimento verdadeiro</h3>
+				<p class="mt-2 text-[15px] leading-relaxed text-taupe">Cada pessoa é recebida como é, sem pressa e sem julgamento, desde o primeiro contato.</p>
+			</div>
+		</div>
+		<div class="reveal flex gap-6 border-t border-ink/10 pt-6">
+			<span class="font-display text-2xl text-clay/50">02</span>
+			<div>
+				<h3 class="font-display text-xl text-ink">Escuta individualizada</h3>
+				<p class="mt-2 text-[15px] leading-relaxed text-taupe">Nenhum caminho é padronizado — o cuidado é desenhado a partir da história de quem chega.</p>
+			</div>
+		</div>
+		<div class="reveal flex gap-6 border-t border-ink/10 pt-6">
+			<span class="font-display text-2xl text-clay/50">03</span>
+			<div>
+				<h3 class="font-display text-xl text-ink">Olhar científico</h3>
+				<p class="mt-2 text-[15px] leading-relaxed text-taupe">Prática fundamentada em evidências, com atualização constante e rigor técnico.</p>
+			</div>
+		</div>
+		<div class="reveal flex gap-6 border-t border-ink/10 pt-6">
+			<span class="font-display text-2xl text-clay/50">04</span>
+			<div>
+				<h3 class="font-display text-xl text-ink">Psicologia + Neuropsicologia</h3>
+				<p class="mt-2 text-[15px] leading-relaxed text-taupe">Duas áreas que se complementam para enxergar a pessoa em sua totalidade — mente e cérebro.</p>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="relative bg-ink py-24 text-cream md:py-32">
+	<div class="mx-auto max-w-6xl px-6 md:px-10">
+		<div class="reveal max-w-xl">
+			<p class="text-sm font-medium uppercase tracking-[0.25em] text-sage">Para quem é</p>
+			<h2 class="mt-4 font-display text-3xl leading-tight sm:text-4xl">Cuidado para <span class="italic text-clay">cada fase da vida</span></h2>
+			<p class="mt-5 text-lg leading-relaxed text-cream/70">Atendemos crianças, adolescentes, adultos e idosos, respeitando as necessidades e particularidades de cada pessoa e de cada momento.</p>
+		</div>
+		<div class="mt-14 grid grid-cols-2 gap-px overflow-hidden rounded-3xl bg-cream/10 md:grid-cols-4">
+			<div class="reveal bg-ink p-7">
+				<p class="font-display text-2xl">Crianças</p>
+				<p class="mt-2 text-sm leading-relaxed text-cream/60">Desenvolvimento, aprendizagem e primeiras infâncias</p>
+			</div>
+			<div class="reveal bg-ink p-7">
+				<p class="font-display text-2xl">Adolescentes</p>
+				<p class="mt-2 text-sm leading-relaxed text-cream/60">Identidade, autonomia e transformações</p>
+			</div>
+			<div class="reveal bg-ink p-7">
+				<p class="font-display text-2xl">Adultos</p>
+				<p class="mt-2 text-sm leading-relaxed text-cream/60">Rotina, relações e autoconhecimento</p>
+			</div>
+			<div class="reveal bg-ink p-7">
+				<p class="font-display text-2xl">Idosos</p>
+				<p class="mt-2 text-sm leading-relaxed text-cream/60">Memória, envelhecimento ativo e qualidade de vida</p>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="relative overflow-hidden bg-clay-dark py-24 text-cream md:py-28">
+	<div aria-hidden="true" class="animate-soft-pulse pointer-events-none absolute -left-16 top-1/2 h-72 w-72 -translate-y-1/2 rounded-full bg-cream/10 blur-3xl"></div>
+	<div class="reveal relative mx-auto max-w-2xl px-6 text-center md:px-10">
+		<h2 class="font-display text-3xl leading-tight sm:text-4xl">Vamos conversar sobre o cuidado que faz sentido para você?</h2>
+		<a href="https://wa.me/message/3HAVRIM3BVEBC1" target="_blank" rel="noopener noreferrer" class="mt-9 inline-flex items-center justify-center gap-2 rounded-full bg-cream px-8 py-4 text-base font-medium text-clay-dark shadow-[0_10px_30px_-8px_rgba(0,0,0,0.35)] transition-transform hover:scale-[1.03]">
+			<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2.992 16.342a2 2 0 0 1 .094 1.167l-1.065 3.29a1 1 0 0 0 1.236 1.168l3.413-.998a2 2 0 0 1 1.099.092 10 10 0 1 0-4.777-4.719"></path></svg>
+			Falar pelo WhatsApp
+		</a>
+	</div>
+</section>
+
+<section id="contato" class="relative mx-auto max-w-6xl px-6 py-24 md:px-10 md:py-32">
+	<div class="grid gap-12 md:grid-cols-[0.5fr_0.5fr] md:gap-16">
+		<div class="reveal">
+			<p class="text-sm font-medium uppercase tracking-[0.25em] text-sage-dark">Contato</p>
+			<h2 class="mt-4 font-display text-3xl leading-tight text-ink sm:text-4xl">Instituto CIN</h2>
+			<p class="mt-4 flex items-center gap-2 text-lg text-taupe">
+				<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="shrink-0 text-clay-dark" aria-hidden="true"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path><circle cx="12" cy="10" r="3"></circle></svg>
+				Petrolina, Pernambuco
+			</p>
+			<p class="mt-6 max-w-sm text-[15px] leading-relaxed text-taupe/80">Endereço completo, telefone e demais informações profissionais serão adicionados em breve.</p>
+		</div>
+		<div class="reveal flex flex-col gap-4">
+			<a href="https://wa.me/message/3HAVRIM3BVEBC1" target="_blank" rel="noopener noreferrer" class="flex items-center justify-between rounded-2xl border border-ink/10 bg-sand/40 px-6 py-5 transition-colors hover:border-clay/40 hover:bg-sand/70">
+				<span class="flex items-center gap-3 font-medium text-ink">
+					<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-clay-dark" aria-hidden="true"><path d="M2.992 16.342a2 2 0 0 1 .094 1.167l-1.065 3.29a1 1 0 0 0 1.236 1.168l3.413-.998a2 2 0 0 1 1.099.092 10 10 0 1 0-4.777-4.719"></path></svg>
+					WhatsApp
+				</span>
+				<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-taupe" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg>
+			</a>
+			<a href="https://instagram.com/institutocin" target="_blank" rel="noopener noreferrer" class="flex items-center justify-between rounded-2xl border border-ink/10 bg-sand/40 px-6 py-5 transition-colors hover:border-clay/40 hover:bg-sand/70">
+				<span class="flex items-center gap-3 font-medium text-ink">
+					<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-clay-dark" aria-hidden="true"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line></svg>
+					Instagram
+				</span>
+				<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-taupe" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg>
+			</a>
+			<a href="https://www.google.com/maps/search/?api=1&amp;query=Petrolina%2C%20Pernambuco" target="_blank" rel="noopener noreferrer" class="flex items-center justify-between rounded-2xl border border-ink/10 bg-sand/40 px-6 py-5 transition-colors hover:border-clay/40 hover:bg-sand/70">
+				<span class="flex items-center gap-3 font-medium text-ink">
+					<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-clay-dark" aria-hidden="true"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path><circle cx="12" cy="10" r="3"></circle></svg>
+					Como chegar
+				</span>
+				<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-taupe" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg>
+			</a>
+		</div>
+	</div>
+</section>
+
+<footer class="border-t border-ink/8 py-8 text-center text-sm text-taupe/70">
+	<p>Instituto CIN — Centro Integrado de Psicologia e Neuropsicologia · Petrolina, PE</p>
 </footer>
 
-<a href="https://wa.me/message/3HAVRIM3BVEBC1" target="_blank" rel="noopener noreferrer" aria-label="Falar pelo WhatsApp" class="fixed bottom-6 right-6 z-40 flex h-9 w-9 items-center justify-center rounded-full bg-clay-dark text-cream shadow-[0_10px_30px_-8px_rgba(0,0,0,0.35)] transition-transform duration-300 hover:scale-[1.02]" style="width:3.5rem;height:3.5rem;font-size:1.4rem">☎</a>
+</div>
 
 <script>
 	var header = document.getElementById("header");
 	window.addEventListener("scroll", function () {
 		if (window.scrollY > 40) {
+			header.classList.remove("bg-transparent");
 			header.classList.add("bg-cream/90", "backdrop-blur-md", "shadow-[0_1px_0_0_rgba(43,38,33,0.06)]");
 		} else {
+			header.classList.add("bg-transparent");
 			header.classList.remove("bg-cream/90", "backdrop-blur-md", "shadow-[0_1px_0_0_rgba(43,38,33,0.06)]");
-		}
-	});
-
-	var menuButton = document.getElementById("menuButton");
-	var navLinks = document.getElementById("navLinks");
-	menuButton.addEventListener("click", function () {
-		navLinks.classList.toggle("hidden");
-		navLinks.classList.toggle("flex");
-	});
-	document.querySelectorAll("#navLinks a").forEach(function (link) {
-		link.addEventListener("click", function () {
-			navLinks.classList.add("hidden");
-			navLinks.classList.remove("flex");
-		});
-	});
-	document.addEventListener("keydown", function (event) {
-		if (event.key === "Escape") {
-			navLinks.classList.add("hidden");
-			navLinks.classList.remove("flex");
 		}
 	});
 
@@ -2055,8 +1971,6 @@ code {
 	document.querySelectorAll(".reveal").forEach(function (el) {
 		observer.observe(el);
 	});
-
-	document.getElementById("year").textContent = new Date().getFullYear();
 </script>
 
 </body>
